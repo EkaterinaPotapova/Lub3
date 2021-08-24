@@ -3,7 +3,16 @@
     <listeners>
         <listener class-name="listeners.Listener"></listener>
     </listeners>
-
+    <test name="IsNegativeCalcTest">
+        <classes>
+            <class name="TestsNGTests.IsNegativeCalcTest"></class>
+        </classes>
+    </test>
+    <test name="WaitCalcTest">
+        <classes>
+            <class name="TestsNGTests.WaitCalcTest"></class>
+        </classes>
+    </test>
 
     <test name="DivTest">
         <classes>
@@ -15,7 +24,7 @@
             <class name="TestsNGTests.SumCalcTest"></class>
         </classes>
     </test>
-    <test name="TestGroups">
+   <test name="TestGroups">
         <groups>
             <run>
                 <include name="correctTests" />//позитивные кейсы

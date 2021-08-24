@@ -1,22 +1,16 @@
 package JUnitTestd;
 
-import static org.junit.Assert.assertTrue;
-
 import com.epam.tat.module4.Calculator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.Assert;
+
 
 /**
- * Unit test for simple App.
+ * JUnit test for Calculator.
  */
 public class DivCalcTestJunit {
     private Calculator calculator;//Объявили переменную
-
-   /**
-     * Rigorous Test :-)
-     */
 
    @Before
    public void setUp(){
@@ -24,18 +18,14 @@ public class DivCalcTestJunit {
    }
 
     @Test
-    public void divTest()
-    {
+    public void divTestJunit(){
         long result=calculator.div(6,7);
-        org.junit.Assert.assertEquals("error sum long",0,result);
-
-
+        org.junit.Assert.assertEquals("error div result",0,result);//проверяем результат целочисленного
+        // деления
     }
 
     @After
     public void clearOblect(){
-        calculator=null;
+        calculator=null;//удалили объект
     }
-
-
 }

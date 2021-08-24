@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="First suite" parallel="tests">
+    <listeners>
+        <listener class-name="listeners.Listener"></listener>
+    </listeners>
+
+
+    <test name="DivTest">
+        <classes>
+            <class name="TestsNGTests.DivCalcTest"></class>
+        </classes>
+    </test>
+    <test name="SumTest">
+        <classes>
+            <class name="TestsNGTests.SumCalcTest"></class>
+        </classes>
+    </test>
+    <test name="TestGroups">
+        <groups>
+            <run>
+                <include name="correctTests" />//позитивные кейсы
+                <include name="base" />//создание и очистка объекта калькулятора
+                <exclude name="inCorrectTests" />//негативные кейсы
+            </run>
+        </groups>
+        <classes>
+            <class name="TestsNGTests.SumCalcTest"></class>
+        </classes>
+    </test>
+</suite>

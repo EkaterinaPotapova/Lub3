@@ -1,4 +1,4 @@
-package TestsNGTests;
+package testsNGTests;
 
 
 import org.testng.Assert;

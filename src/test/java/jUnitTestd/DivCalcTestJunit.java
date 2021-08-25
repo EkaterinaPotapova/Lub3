@@ -1,4 +1,4 @@
-package JUnitTestd;
+package jUnitTestd;
 
 import com.epam.tat.module4.Calculator;
 import org.junit.After;

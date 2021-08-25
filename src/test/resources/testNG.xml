@@ -5,35 +5,35 @@
     </listeners>
     <test name="IsNegativeCalcTest">
         <classes>
-            <class name="TestsNGTests.IsNegativeCalcTest"></class>
+            <class name="testsNGTests.IsNegativeCalcTest"></class>
         </classes>
     </test>
     <test name="WaitCalcTest">
         <classes>
-            <class name="TestsNGTests.WaitCalcTest"></class>
+            <class name="testsNGTests.WaitCalcTest"></class>
         </classes>
     </test>
 
     <test name="DivTest">
         <classes>
-            <class name="TestsNGTests.DivCalcTest"></class>
+            <class name="testsNGTests.DivCalcTest"></class>
         </classes>
     </test>
-    <test name="SumTest">D
+    <test name="SumTest">
         <classes>
-            <class name="TestsNGTests.SumCalcTest"></class>
+            <class name="testsNGTests.SumCalcTest"></class>
         </classes>
     </test>
    <test name="TestGroups">
         <groups>
             <run>
-                <include name="correctTests" />//позитивные кейсы
-                <include name="base" />//создание и очистка объекта калькулятора
-                <exclude name="inCorrectTests" />//негативные кейсы
+                <include name="correctTests" /><!-- позитивные кейсы-->
+                <include name="base" /><!-- создание и очистка объекта калькулятора-->
+                <exclude name="inCorrectTests" /><!--негативные кейсы-->
             </run>
         </groups>
         <classes>
-            <class name="TestsNGTests.SumCalcTest"></class>
+            <class name="testsNGTests.SumCalcTest"></class>
         </classes>
     </test>
 </suite>
